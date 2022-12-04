@@ -77,7 +77,6 @@ export const App: FC = () => {
       </div>
       <AddForm addNote={addNote} updateNote={updateNote} note={editingNote} />
       <NoteList
-        // notes={notes}
         filterNotes={filteredNotes}
         removeNote={removeNote}
         updateNote={onUpdateNote}

@@ -6,7 +6,6 @@ import { NoteModel } from "../../models/noteModel";
 import "./style.scss";
 
 interface NoteList {
-  //   notes: NoteModel[];
   filterNotes: NoteModel[];
   removeNote: (id: string) => void;
   updateNote: (note: NoteModel) => void;
@@ -23,7 +22,6 @@ export const NoteList: FC<NoteList> = ({
         return (
           <NoteItem
             key={filterNote.id}
-            // note={note}
             removeNote={removeNote}
             updateNote={updateNote}
             note={filterNote}
